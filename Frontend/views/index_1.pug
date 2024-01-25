@@ -1,0 +1,190 @@
+extends layout_index.pug
+
+block body
+    <div class="home-columns">
+        <div class="home-sidebar">
+            <a href="#" class="btn-switch">全</a>
+            <a href="#" class="btn-switch c-id">ID</a>
+            <a href="#" class="btn-switch c-ux">UX</a>
+            <a href="#" class="btn-switch c-ui">UI</a>
+        </div>
+        <div class="home-content">
+            <div class="filter-bar">
+                <div class="custom-selectbox">
+                    span.the-title 成員
+                    .custom-select
+                        <select class="multiple-select" multiple="multiple">
+                            <optgroup label="ID">
+                                <option value="0">Joshua</option>
+                                <option value="1">Jerry</option>
+                                <option value="2">Jones</option>
+                                <option value="3">Wilson</option>
+                            </optgroup>
+                            <optgroup label="UI">
+                                <option value="6">Chris</option>
+                                <option value="7">Ida</option>
+                            </optgroup>
+                            <optgroup label="UX">
+                                <option value="8">Katrina</option>
+                                <option value="9">Sam</option>
+                                <option value="10">Ging</option>
+                            </optgroup>
+                        </select>
+                </div>
+                <div class="custom-selectbox">
+                    span.the-title 開案部門
+                    .custom-select
+                        <select class="multiple-select" multiple="multiple">
+                            <option value="0">MKT</option>
+                            <option value="1">BOD</option>
+                        </select>
+                </div>
+                <div class="custom-selectbox sz-md">
+                    span.the-title 專案狀態
+                    .custom-select
+                        <select name="" id="">
+                            option(value="1") In progress
+                            option(value="2") Complete
+                            option(value="3") Maintain 
+                            option(value="4") Pending
+                            option(value="5") Urgent
+                        </select>
+                </div>
+                .custom-datetimes
+                    label(for="") 日期區間
+                    .datetimesbox
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" name="datetimes" />
+
+                .button Clear
+                .button Search
+
+
+                <a href="#modal-choose-group" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">選擇組別</a>
+                <a href="#modal-editMsg-group" data-modaal-type="inline" data-modaal-animation="fade" class="modaal">異動紀錄</a>
+
+                .switch-btn-1
+                    input.switch-input#exampleSwitch(type="checkbox" name="exampleSwitch")
+                    label.switch-paddle(for="exampleSwitch")
+                    span.switch-text Preject Detail
+            </div>
+            <div class="main">
+                <!-- Timeline -->
+                <div id="gantt_here" style='width:100%; height:100%;'></div>
+
+                <div id="my-form">
+                    p
+                        span Project Name: 
+                        span.task-title 
+                    <div class="custom-selectbox sz-full">
+                        span.the-title Project Status: 
+                        .custom-select
+                            <select name="" id="" class="task-status">
+                                option(value="1") InProgress
+                                option(value="2") Maintain
+                                option(value="3") Pending
+                                option(value="4") Complete
+                            </select>
+                    </div> 
+
+                    <br>
+                    .btns
+                        <div class="button btn-change-save">Save</div>
+                        <div class="button btn-change-close">Close</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    .overlay
+    <!-- Lightbox -->
+    <div id="modal-choose-group" style="display:none;">
+        .modal-content
+            p Verification successfully !
+            p
+                b Welcome to Progect Manager information system 
+
+            <div class="custom-select sz-xl mb-20">
+                <select name="" id="">
+                <option value="0">選擇組別</option>
+                <option value="0">ID</option>
+                <option value="0">UI</option>
+                <option value="0">UX</option>
+                </select>
+            </div>
+
+            <a href="index.html" class="button-default">Submit</a>
+    </div>
+
+
+    .overlay
+    <!-- Lightbox -->
+    <div id="modal-editMsg-group" style="display:none;">
+        .modal-style2
+            .modal-title 
+                h3 您確定要異動原排程嗎?
+            .modal-content
+                h4 請填選異動原因 *
+                .formGroup 
+                    .col-6 
+                        <div class="form-check radio">
+                            <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="indicator" for="flexRadioDefault1">PM部分排程變更</label>
+                        </div>
+                    .col-6 
+                        <div class="form-check radio">
+                            <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="indicator" for="flexRadioDefault2">開案時間延期</label>
+                        </div>
+                    .col-6 
+                        <div class="form-check radio">
+                            <input type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="indicator" for="flexRadioDefault3">因有急件須優先處理</label>
+                        </div>
+                    .col-6 
+                        <div class="form-check radio">
+                            <input type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="indicator" for="flexRadioDefault4">未收到執行所需資料</label>
+                        </div>
+                    .col-12
+                        <div class="form-check radio">
+                            <input type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                            <label class="indicator" for="flexRadioDefault5">其他</label>
+                            <input type="text" class="input-text">
+                        </div>
+
+            .modal-footer
+                <a href="index.html" class="btn">取消</a>
+                <a href="index.html" class="btn primary">確認</a>
+    </div>
+
+    <div id="bottom-mark" class="close">
+        <div class="item">
+            <div class="accordion">
+                <h3><i class="fa-solid fa-caret-down"></i> 異動紀錄</h3>
+                <div class="mark-inner">
+                    <div class="scroll">
+                        <div class="table">
+                            <div class="tr">
+                                <div class="td">Ging Chen修改了UX Research 任務時間，2023-01-11~2023-09-12 --> 2023-01-11~2023-09-12 ( 異動原因 : 未收到執行所需資料 )</div>
+                                <div class="td">2023-07-31  08:32:11</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Ging Chen修改了UX Research 任務時間，2023-01-11~2023-09-12 --> 2023-01-11~2023-09-12 ( 異動原因 : 未收到執行所需資料 )</div>
+                                <div class="td">2023-07-31  08:32:11</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Ging Chen修改了UX Research 任務時間，2023-01-11~2023-09-12 --> 2023-01-11~2023-09-12 ( 異動原因 : 未收到執行所需資料 )</div>
+                                <div class="td">2023-07-31  08:32:11</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Ging Chen修改了UX Research 任務時間，2023-01-11~2023-09-12 --> 2023-01-11~2023-09-12 ( 異動原因 : 未收到執行所需資料 )</div>
+                                <div class="td">2023-07-31  08:32:11</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

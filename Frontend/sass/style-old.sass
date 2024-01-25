@@ -1,0 +1,1158 @@
+body
+  margin: 0
+  padding: 0
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif
+
+#header
+  width: 100%
+  background-color: #383947
+  height: 60px
+
+  h1
+    display: inline-block
+    color: white
+    font-szie: 28px
+    line-height: 60px
+    margin: 0
+    padding-right: 20px
+    vertical-align: middle
+
+  p
+    display: inline-block
+    color: white
+    font-size: 18px
+    line-height: 60px
+    margin: 0
+    vertical-align: middle
+    box-sizing: border-box
+
+  .header-inner
+    padding: 0 15px
+
+.container
+  max-width: 1360px
+  margin: 0 auto
+
+.columns
+  display: flex
+  align-items: stretch
+
+  .item
+    flex: 50%
+    max-width: 50%
+
+#login
+  background: url(../images/login-bg.svg) no-repeat left bottom
+  background-size: cover
+  .columns
+    min-height: calc(100vh - 60px)
+    .item
+      display: flex
+      align-items: center
+      box-sizing: border-box
+
+      &:nth-child(1)
+        flex: 70%
+        max-width: 70%
+        text-align: left
+        color: white
+        font-size: 32px
+        line-height: 1.5
+        padding-right: 40px
+
+        img
+          max-width: 1000px
+
+        .item-innerbox
+          width: 460px
+          margin-left: auto
+
+      &:nth-child(2)
+        text-align: left
+        padding-left: 40px
+        padding-right: 60px
+        flex: auto
+        max-width: auto
+        box-sizing: border-box
+
+        .item-innerbox
+          min-width: 380px
+
+        .form-row
+          margin-bottom: 15px
+
+        h3
+          color: #3B4B75
+          font-size: 24px
+          font-weight: bold
+          margin: 0
+          margin-bottom: 20px
+
+  .item-innerbox
+    transform: translateY(-30%)
+
+.form
+  input
+    border: none
+    appearance: none
+    background-color: #EBEBEB
+    border-radius: 6px
+    height: 50px
+    width: 100%
+    color: black
+    font-size: 15px
+    line-height: 1.5
+    padding: 0 15px
+    box-sizing: border-box
+
+  span
+    display: block
+    margin-bottom: 10px
+    color: black
+    font-size: 15px
+    line-height: 1.5
+
+.button
+  border: 6px
+  background-color: #444791
+  font-size: 16px
+  line-height: 50px
+  color: white
+  height: auto
+  border-radius: 6px
+  display: flex
+  text-decoration: none
+  width: 100%
+  display: block
+  text-align: center
+
+.btn-switch
+  color: white
+  text-decoration: none
+  display: block
+  width: 60px
+  height: 60px
+  background: #393737
+  border-radius: 8px
+  margin: 15px 0
+  font-size: 28px
+  font-weight: bold
+  text-align: center
+  line-height: 60px
+
+  &:hover
+    color: white
+    text-decoration: none
+
+  &.c-ux
+    background-color: #9B1DD7
+  &.c-ui
+    background-color: #1DAAD7
+  &.c-id
+    background-color: #D73E1D
+
+.home-columns
+  display: flex
+  align-items: stretch
+  width: 100%
+  min-height: calc(100vh - 60px)
+
+.home-content
+  flex: calc(100vw - 70px)
+  max-width: calc(100vw - 70px)
+
+.home-sidebar
+  flex: 70px
+  max-width: 70px
+  padding: 0 10px
+  min-height: 100%
+  background-color: #383947
+
+.main
+  // padding: 15px
+  background-color: #fff
+
+.filter-bar
+  width: 100%
+  height: auto
+  box-sizing: border-box
+  padding: 15px
+  box-shadow: 2px 0px 22px rgba(0, 0, 0, 0.25)
+  position: relative
+  z-index: 20
+
+  .flex
+    display: flex
+
+  .flex-item
+    flex: 1 1
+    &::after
+      content: ""
+      display: block
+      clear: both
+
+  .custom-selectbox
+    float: left
+    margin-right: 20px
+
+body #gantt_here
+    height: calc(100vh - 375px) !important
+    transition: height .5s ease
+
+body.close-bottom #gantt_here
+  height: calc(100vh - 275px) !important
+
+body.close-bottom #bottom-mark
+  .mark-inner
+    height: 0
+    overflow: hidden
+
+  i
+    transform: rotate(-90deg)
+
+#bottom-mark
+  h3
+    font-size: 20px !important
+
+.custom-selectbox
+  max-width: 160px
+  display: inline-block
+  width: 100%
+
+  .the-title
+    display: block
+    color: #626262
+    font-size: 12px
+    line-height: 1
+    margin-bottom: 10px
+
+  &.mb-20
+    margin-bottom: 20px
+
+  &.sz-md
+    max-width: 150px
+
+  &.sz-full
+    max-width: 100%
+
+.custom-select
+  position: relative
+  width: 100%
+  height: auto
+
+  &.mb-20
+    margin-bottom: 20px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    margin-top: -3px
+    right: 10px
+    border-style: solid
+    border-width: 6px
+    border-color: #505050 transparent transparent transparent
+
+  .ms-choice .icon-caret
+    border-color: #505050 transparent transparent transparent
+    border-width: 5px 5px 0 5px
+
+  select
+    width: 100%
+    appearance: none
+    border: none
+    color: #404040
+    font-size: 15px
+    line-height: 35px
+    padding: 0 10px
+    box-sizing: border-box
+    border: 1px solid #7F7F7F
+    border-radius: 10px
+
+  .multiple-select button
+    height: 35px
+    border-radius: 10px
+    border-color: #7F7F7F
+    color: black
+    font-size: 15px
+    line-height: 35px
+    box-sizing: border-box
+
+  .ms-choice>span.placeholder
+    color: black
+    background: transparent
+
+  // .ms-choice>span
+  //   left: 25px
+
+.custom-datetimes
+  display: inline-block
+  margin-right: 15px
+  position: relative
+
+  label
+    display: block
+    color: #3B425E
+    font-size: 12px
+    line-height: 1
+    margin-bottom: 5px
+
+  .datetimesbox
+    position: relative
+    display: inline-block
+    max-width: 250px
+
+  i
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    font-size: 10px
+    color: #7F7F7F
+
+  input
+    width: 100%
+    appearance: none
+    border: none
+    color: #404040
+    font-size: 15px
+    line-height: 35px
+    padding: 0 10px
+    padding-left: 30px
+    box-sizing: border-box
+    border: 1px solid #7F7F7F
+    border-radius: 10px
+
+.button
+  display: inline-block
+  border-radius: 10px
+  background-color: #D73E1D
+  color: white
+  font-size: 15px
+  font-weight: bold
+  line-height: 40px
+  max-width: 120px
+  margin-right: 10px
+  cursor: pointer
+  user-select: none
+
+.button
+  display: inline-block
+  border-radius: 10px
+  background-color: #D73E1D
+  color: white
+  font-size: 15px
+  font-weight: bold
+  line-height: 40px
+  max-width: 120px
+  margin-right: 10px
+  cursor: pointer
+  user-select: none
+
+.button-default
+  display: block
+  border-radius: 5px
+  background-color: #383947
+  color: white
+  font-size: 15px
+  font-weight: bold
+  line-height: 50px
+  width: 100%
+  margin-right: 10px
+  cursor: pointer
+  user-select: none
+  text-decoration: none
+  width: 100%
+  text-align: center
+
+  &.color-primary
+    background-color: #4F43DB
+
+.custom-search
+  border-radius: 5px
+  height: 35px
+  border: 1px solid #7F7F7F
+  overflow: hidden
+
+  input
+    width: 100%
+    appearance: none
+    border: none
+    color: #404040
+    font-size: 15px
+    line-height: 35px
+    padding: 0 10px
+    box-sizing: border-box
+
+#bottom-mark
+  position: fixed
+  bottom: 0
+  left: 90px
+  right: 0
+  background: #EDEDED
+  padding: 20px
+  border-top: 1px solid #5C5C5C
+
+  h3
+    color: black
+    font-weight: bold
+    user-select: none
+    cursor: pointer
+    margin: 0
+
+    i
+      color: #B7B7B7
+      margin-right: 5px
+
+  .mark-inner
+    padding-left: 20px
+    height: 90px
+    transition: all .5s ease
+
+  .scroll
+    height: 90px
+    overflow-y: auto
+    box-sizing: border-box
+    margin-top: 10px
+
+.table
+  color: #000000
+  font-size: 15px
+  line-height: 1.5
+  // max-width: 600px
+  .tr
+    display: flex
+    margin-bottom: 8px
+
+  .td
+    padding: 0 10px
+
+    &:nth-child(2)
+      flex: 200px
+      max-width: 200px
+
+.modaal-container
+  max-width: 600px
+  border-radius: 8px
+
+.modal-content
+  h4
+    color: #1E1E1E
+    font-size: 15px !important
+    line-height: 1.5
+  b
+    font-weight: bold
+
+.modal-footer
+  text-align: right
+  padding: 30px 0
+  a.btn
+    display: inline-block
+    min-width: 100px
+    padding: 5px 15px
+    box-sizing: border-box
+    font-size: 16px
+    line-height: 30px
+    text-align: center
+    border-radius: 6px
+    background-color: #DBDBDB
+    color: black
+    text-decoration: none
+    margin-left: 10px
+
+    &.primary
+      background-color: #4F43DB
+      color: white
+
+.modaal-overlay
+  background-color: rgba(black,.7) !important
+
+.custom-selectbox.sz-xl
+  height: 40px
+  max-width: 100%
+  select
+    padding-left: 15px
+    background: #EBEBEB
+    border-radius: 5px
+    border: none
+    line-height: 40px
+
+.ms-drop ul
+  overflow-x: hidden
+
+.ms-drop ul>li.multiple
+  padding-left: 20px
+  box-sizing: border-box
+  box-sizing: border-box
+
+///Timeline
+div[aria-label="InProgress"]
+  background-color: #F2C47D
+
+div[aria-label="Maintain"]
+  background-color: #FDC3C3
+
+.gantt_row_project .gantt_cell[data-column-name="text"]
+  font-weight: bold
+
+.gantt_scale_cell.weekend,
+.gantt_task_cell.weekend
+  background: rgba(#fff,.4) !important
+
+.gantt_scale_cell
+  font-size: 11px
+
+.gantt_scale_cell.weekend
+  font-weight: bold !important
+
+.gantt_task_line
+  background: #DEDEDE
+  border-color: #DEDEDE
+  .gantt_task_content
+    color: #000
+
+.gantt_cal_cover
+  opacity: .7
+
+.gantt_grid_data .gantt_row.gantt_selected, .gantt_grid_data .gantt_row.odd.gantt_selected, .gantt_task_row.gantt_selected
+  background: #E3E7F4 !important
+
+.gantt_grid_data .gantt_row.odd:hover, .gantt_grid_data .gantt_row:hover
+  background: rgba(#ccc,.3)
+
+.gantt_add, .gantt_grid_head_add
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>') no-repeat center center
+  background-size: 13px auto
+
+.gantt_tree_icon.gantt_open,
+.gantt_tree_icon.gantt_close
+  padding-right: 10px
+
+.gantt_grid .gantt_row
+  & > .gantt_cell:nth-child(1)
+    border-right: 2px solid #ccc
+    background: #fff
+
+.gantt_data_area div, .gantt_grid div
+  tap-highlight-color: none !important
+
+.gantt_task_line.gantt_project
+  opacity: 0
+
+div.gantt_cal_light .gantt_cal_ltext
+  padding: 8px
+
+.gantt_cell[aria-label=" M "],
+.gantt_cell[aria-label=" P "],
+.gantt_cell[aria-label=" 完 "],
+.gantt_cell[aria-label=" In "],
+.gantt_cell[aria-label=" 急 "]
+  span
+    font-weight: bold
+    font-size: 13px
+    line-height: 25px
+    border-radius: 3px
+    padding: 0
+    border-radius: 3px
+    margin: 3px 0
+    cursor: pointer
+    display: block
+    text-indent: -1000px
+    overflow: hidden
+
+.gantt_cell[aria-label=" In "]
+  span
+    background-color: #FDD597
+
+.gantt_cell[aria-label=" M "]
+  span
+    background-color: #7BE7EE
+
+.gantt_cell[aria-label=" P "]
+  span
+    background-color: #B9B9B9
+
+.gantt_cell[aria-label=" 急 "]
+  span
+    color: white
+    background-color: #FF6565
+
+.gantt_cell[aria-label=" 完 "]
+  span
+    background-color: #B9B9B9
+
+.gantt_cell[aria-label=" + ADD "]
+  span
+    display: block
+    max-width: 60px
+    text-align: center
+    background-color: #000
+    color: white
+    font-weight: bold
+    font-size: 12px
+    line-height: 1.5
+    margin-top: 6px
+    border-radius: 20px
+    cursor: pointer
+    transition: all .5s ease
+
+    &:hover
+      background: #D73E1D
+
+.overlay
+  width: 100%
+  height: 100%
+  position: fixed
+  z-index: 10000
+  top: 0
+  left: 0
+  background-color: #000
+  opacity: .7
+  display: none
+
+#my-form
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  width: 500px
+  padding: 15px
+  background-color: #fff
+  box-shadow: 0 0 10px rgba(black,.5)
+  z-index: 15000
+
+  .btns
+    text-align: center
+
+  .custom-selectbox
+    margin-bottom: 30px
+
+    .custom-select
+      display: inline-block
+      max-width: calc( 100% - 100px)
+
+    .the-title
+      display: inline-block
+      margin-right: 10px
+
+  p
+    font-weight: bold
+    font-size: 15px
+    line-height: 1.5
+
+.gantt_task_row.project-task,
+.gantt_row.project-task
+  background-color: #EFF3FF
+
+.switch-btn-1
+  height: auto
+  position: relative
+  outline: 0
+  color: #fefefe
+  user-select: none
+  display: inline-block
+  float: right
+  margin-top: 20px
+
+  .switch-input
+    position: absolute
+    margin-bottom: 0
+    opacity: 0
+
+  // 按鈕外框
+  .switch-paddle
+    position: relative
+    display: inline-block
+    width: 40px
+    height: 15px
+    border-radius: 1rem
+    background: #fff
+    transition: all 0.25s ease-out
+    border: 2px solid #ddd
+    font-weight: inherit
+    color: inherit
+    cursor: pointer
+    vertical-align: middle
+
+      // 按鈕內部
+    &::after
+      position: absolute
+      top: -3px
+      left: 0
+      display: block
+      width: 20px
+      height: 20px
+      transform: translate3d(0, 0, 0)
+      border-radius: 1rem
+      background: #000000
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.13)
+      transition: left 250ms cubic-bezier(0.34, 1.61, 0.7, 1),transform 250ms cubic-bezier(0.34, 1.61, 0.7, 1)
+      content: ""
+
+  // 顯示文字
+  .switch-text
+    display: inline-block
+    color: #000
+    font-size: 13px
+    font-weight: bold
+    line-height: 20px
+    margin-left: 10px
+    vertical-align: middle
+
+  & > input:checked ~ .switch-paddle
+    background: #ccc
+    border-color: #ccc
+
+  & > input:checked ~ .switch-paddle::after
+    left: 24px
+
+.header-inner
+  &::after
+    content: ""
+    clear: both
+    display: block
+
+.user-info
+  float: right
+  vertical-align: middle
+  text-align: right
+
+  .content
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 60px
+
+  a,p
+    color: white
+    font-size: 16px !important
+    line-height: 1 !important
+    padding: 0 5px
+    vertical-align: middle
+    text-decoration: none
+    margin: 0
+
+  a
+    padding: 0 10px
+
+.modal-style2
+  margin: -30px 0
+  .modaal-content-container
+    padding: 0
+  .modal-title
+    position: relative
+    padding: 10px 30px
+    background-color: #F3F8FC
+    margin-left: -30px
+    margin-right: -30px
+    border-radius: 15px 15px 0 0
+
+    h3
+      margin: 10px 0
+
+  .modal-content
+    h4
+      color: #1E1E1E
+      font-size: 18px
+      font-weight: bold
+      margin: 0
+      margin-top: 25px
+      margin-bottom: 15px
+
+.formGroup
+  display: flex
+  flex-flow: wrap
+  margin-left: -15px
+  margin-right: -15px
+
+  .col-6
+    flex: 50%
+    max-width: 50%
+    padding: 0 15px
+    box-sizing: border-box
+
+  .col-12
+    flex: 100%
+    max-width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+
+  .form-check
+    margin-bottom: 15px
+    cursor: pointer
+
+.checkbox > input,
+.checkbox-inline > input,
+.radio > input,
+.radio-inline > input
+  opacity: 0
+  position: absolute
+
+.checkbox label,
+.radio label
+  margin-top: 5px
+  margin-bottom: 5px
+
+.checkbox .indicator,
+.checkbox-inline .indicator,
+.radio .indicator,
+.radio-inline .indicator
+  position: relative
+
+.checkbox .indicator:before,
+.checkbox-inline .indicator:before,
+.radio .indicator:before,
+.radio-inline .indicator:before
+  content: ''
+  border: 1px solid #000
+  display: inline-block
+  vertical-align: middle
+  width: 15px
+  height: 15px
+  padding: 2px
+  margin-top: -5px
+  margin-right: 10px
+  text-align: center
+
+.checkbox input:checked + .indicator:before,
+.checkbox-inline input:checked + .indicator:before
+  border-color: #4F43DB
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="-7 -7 30 30"><path fill="#4F43DB" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>') no-repeat
+
+.checkbox input:disabled + .indicator:before,
+.checkbox-inline input:disabled + .indicator:before
+  border-color: #ccc
+  box-shadow: inset 0px 0px 0px 4px #fff
+
+.checkbox input:checked:disabled + .indicator:before,
+.checkbox-inline input:checked:disabled + .indicator:before
+  border-color: #ccc
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="-7 -7 30 30"><path fill="#ccc" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>') no-repeat
+
+.radio input + .indicator:before,
+.radio-inline input + .indicator:before
+  border-radius: 50%
+
+.radio input:checked + .indicator:before,
+.radio-inline input:checked + .indicator:before
+  border-color: #4F43DB
+  background: #4F43DB
+  box-shadow: inset 0px 0px 0px 5px #fff
+
+.radio input:disabled + .indicator:before,
+.radio-inline input:disabled + .indicator:before
+  border-color: #ccc
+  box-shadow: inset 0px 0px 0px 5px #fff
+
+.radio input:checked:disabled + .indicator:before,
+.radio-inline input:checked:disabled + .indicator:before
+  border-color: #ccc
+  background: #ccc
+  box-shadow: inset 0px 0px 0px 5px #fff
+
+.checkbox input:focus + .indicator,
+.checkbox-inline input:focus + .indicator,
+.radio input:focus + .indicator,
+.radio-inline input:focus + .indicator
+  outline: 0px solid #ddd
+
+input.input-text
+  display: inline-block
+  max-width: 100%
+  border: 1px solid rgba(#878787,.7)
+  position: relative
+  opacity: 1
+  max-width: 400px
+  width: 100%
+  height: 30px
+  border-radius: 5px
+  margin-left: 20px
+
+.modaal-container
+  position: relative
+
+.modaal-close
+  position: absolute !important
+  top: 8px
+  background-color: none
+
+.modaal-close:after, .modaal-close:before
+  border-radius: 0
+  width: 2px
+  background-color: #68696A
+
+.gantt-lb-datepicker
+  display: flex
+  font-size: 12px
+  align-items: center
+  padding-left: 7px
+  height: 30px
+
+  input
+    width: 120px
+    height: 30px
+    padding: 0 10px
+    box-sizing: border-box
+    border: 1px solid #d7d7d7
+    margin: 0 10px
+
+#login
+  .photo
+    align-items: center
+    max-width: 800px
+    width: 70%
+    margin: 0 auto
+    img
+      max-width: 100% !important
+
+@media screen and (max-height: 1540px)
+  #login .photo
+    width: 60%
+
+.add-project
+  border-radius: 4px
+  background-color: #55576E
+  color: white
+  font-size: 15px
+  line-height: 33px
+  text-align: center
+  cursor: pointer
+  max-width: 110px
+  margin: 18px auto
+
+#today
+  height: 10000%
+  width: 3px
+  top: 0
+  position: absolute
+  background-color: rgba(255, 0, 0, 0.4)
+
+.user-tools
+  padding: 0 20px
+  padding-bottom: 15px
+
+  &:after
+    content: ""
+    clear: both
+    display: block
+
+.navigation
+  position: relative
+  display: inline-flex
+  background: lightgray
+  padding: 0 3px
+  border-radius: 50px
+  color: #000000
+  font-size: 12px
+  line-height: 24px
+
+  &__active-state
+    position: absolute
+    background: #363745
+    height: calc(100% - 8px)
+    width: 60px
+    border-radius: 30px
+    top: 3px
+    left: 3px
+    opacity: 0
+    transition: left .4s ease-out, width .4s ease-out, opacity .4s ease-out .4s
+    color: white !important
+    border-radius: 30px
+    font-size: 12px
+    height: 24px
+
+  &__btn
+    cursor: pointer
+    padding: 3px 21px
+    transition: color .3s ease-out
+    z-index: 1
+    margin-right: 5px
+    text-decoration: none
+    color: #363745
+
+    &:last-child
+      margin-right: 0
+
+    &--active
+      pointer-events: none
+      color: white
+
+.switch-viewport
+  display: inline-block
+  float: right
+  vertical-align: middle
+  margin-top: 16px
+  margin-left: 20px
+
+.switch-filter
+  display: inline-block
+  float: right
+  vertical-align: middle
+  margin-top: 16px
+  margin-left: 20px
+  cursor: pointer
+
+.dropdown .dropdown-toggle
+  appearance: none
+  border: none
+  background: none
+  cursor: pointer
+  font-size: 15px
+  padding: 0 5px
+  &::before
+    display: none
+
+  &.show
+    i
+      color: #363745
+
+.dropdown label
+  font-size: 12px
+  line-height: 30px
+  text-align: center
+  border: none
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15)
+
+  li:active,li:focus
+    color: white
+    background-color: #363745
+
+  li:not(:last-child)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
+  .dropdown
+    position: relative
+    display: inline-block
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-size: 14px
+
+.dropdown > a, .dropdown > button
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: 14px
+  background-color: white
+  border: 1px solid #ccc
+  padding: 6px 20px 6px 10px
+  border-radius: 4px
+  display: inline-block
+  color: black
+  text-decoration: none
+
+.dropdown > a:before, .dropdown > button:before
+  position: absolute
+  right: 7px
+  top: 12px
+  content: ' '
+  border-left: 5px solid transparent
+  border-right: 5px solid transparent
+  border-top: 5px solid black
+
+.dropdown input[type=checkbox]
+  position: absolute
+  display: block
+  top: 0px
+  left: 0px
+  width: 100%
+  height: 100%
+  margin: 0px
+  opacity: 0
+
+  &:checked
+    position: fixed
+    z-index: 0
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+
+.dropdown
+  position: relative
+.dropdown ul
+  position: absolute
+  top: 18px
+  border: 1px solid #ccc
+  border-radius: 3px
+  right: 0px
+  list-style: none
+  padding: 4px 0px
+  display: none
+  background-color: white
+  box-shadow: 0 3px 6px rgba(0,0,0,.175)
+  z-index: 100
+
+.dropdown input[type=checkbox]:checked + ul
+  display: block
+
+  & li
+    display: block
+    padding: 6px 20px
+    white-space: nowrap
+    min-width: 100px
+
+  & li:hover
+    background-color: #F5F5F5
+    cursor: pointer
+
+  & li a
+    text-decoration: none
+    display: block
+    color: black
+
+.dropdown .divider
+  height: 1px
+  margin: 9px 0
+  overflow: hidden
+  background-color: #e5e5e5
+  font-size: 1px
+  padding: 0
+
+.project-Urgent
+  .gantt_task_line
+    background: #FF6565
+    border-color: #FF6565
+
+.task-Urgent.gantt_task_line
+  background: #FF6565 !important
+  border-color: #FF6565 !important
+  &.gantt_bar_milestone
+    background: #fff !important
+    border-color: #FF6565 !important
+
+.project-Inprogress
+  .gantt_task_line
+    background: #f8d8a7
+    border-color: #F8D8A7
+
+.task-Inprogress.gantt_task_line
+  background: #f8d8a7 !important
+  border-color: #f8d8a7 !important
+
+  &.gantt_bar_milestone
+    background: #ffc107 !important
+    border-color: #ffc107 !important
+
+.project-Maintain
+  .gantt_task_line
+    background: #AFEBEF
+    border-color: #AFEBEF
+  &.gantt_bar_milestone
+    background: #fff !important
+    border-color: #AFEBEF !important
+
+.task-Maintain.gantt_task_line
+  background: #AFEBEF !important
+  border-color: #AFEBEF !important
+
+.project-Pending,.project-Complete
+  .gantt_task_line
+    background: #B9B9B9
+    border-color: #B9B9B9
+
+.task-Pending,.task-Complete
+  &.gantt_task_line
+    background: #B9B9B9 !important
+    border-color: #B9B9B9 !important
+
+    &.gantt_bar_milestone
+      background: #fff !important
+      border-color: #B9B9B9 !important

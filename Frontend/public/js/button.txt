@@ -1,0 +1,14 @@
+//1. task
+/html/body/div[1]/div[4]
+document.querySelector("body > div.gantt_cal_light > div.gantt_btn_set.gantt_left_btn_set.gantt_save_btn_set")
+document.querySelector("body > div.gantt_cal_light > div.gantt_btn_set.gantt_left_btn_set.gantt_save_btn_set > div:nth-child(2)")
+
+
+//2.milestone
+/html/body/div[1]/div[4]
+document.querySelector("body > div.gantt_cal_light > div.gantt_btn_set.gantt_left_btn_set.gantt_save_btn_set")
+document.querySelector("body > div.gantt_cal_light > div.gantt_btn_set.gantt_left_btn_set.gantt_save_btn_set > div:nth-child(2)")
+
+
+document.querySelector("body > div.gantt_cal_light > div.gantt_btn_set.gantt_left_btn_set.gantt_save_btn_set > div.gantt_save_btn")
+document.querySelector("body > div.gantt_cal_light > div.gantt_btn_set.gantt_left_btn_set.gantt_save_btn_set > div.gantt_save_btn")
